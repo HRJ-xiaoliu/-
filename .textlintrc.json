@@ -1,10 +1,20 @@
 {
-  "plugins": {},
-  "filters": {},
+  "plugins": {
+    "@textlint/markdown": {
+            "extensions": [".ipynb"]
+        }
+    },
+  "filters": {
+    "whitelist": {
+            "whitelistConfigPaths": [
+                "./allow.json"
+            ]
+        }
+    },
   "rules": { 
       "ja-space-between-half-and-full-width": {
-      "space": "always",
-    "no-todo": true
-      }
-    } 
+      "space": "always"
+      },
+  "no-todo":true
+  }   
 }
