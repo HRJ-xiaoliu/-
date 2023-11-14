@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "textlint": "^13.4.0"
+    "textlint": "^13.4.0",
+    "textlint-rule-date-weekday-mismatch": "^1.0.6",
+    "textlint-rule-terminology": "^4.0.1"
   },
   "devDependencies": {
     "textlint-filter-rule-allowlist": "^4.0.0",

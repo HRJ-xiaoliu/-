@@ -11,10 +11,36 @@
             ]
         }
     },
-  "rules": { 
-      "ja-space-between-half-and-full-width": {
-      "space": "always"
-      },
-  "no-todo":true
-  }   
+  "rules": {
+    "date-weekday-mismatch":{
+            "lang": "zh"
+        },
+    "terminology": {
+      "skip": ["Blockquote"],
+      "terms": [
+        "JavaScript",
+        "ESLint",
+        "Sass",
+        "Less",
+        "npm",
+        ["front[- ]end(\\w*)", "frontend$1"],
+        ["back[- ]end(\\w*)", "backend$1"],
+        ["web[- ]?site(s?)", "site$1"],
+        ["hot[- ]key", "hotkey"],
+        ["repo\\b", "repository"],
+        ["CLI tool(s?)", "command line tool$1"],
+        ["build system(s?)", "build tool$1"],
+        ["id['’]?s", "IDs"],
+        ["(\\w+[^.?!]\\)? )webpack", "$1webpack"],
+        ["(\\w+[^.?!]\\)? )internet", "$internet"]
+      ],
+      "terms": "~/terms.jsonc",
+      "terms": "@johnsmith/terms",
+      "exclude": [
+        "CSS"
+      ]
+    }
+  },
+    "no-todo":true
 }
+  
