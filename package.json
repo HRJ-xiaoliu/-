@@ -1,5 +1,21 @@
 {
   "dependencies": {
     "textlint": "^13.4.0"
-  }
+  },
+  "devDependencies": {
+    "textlint-filter-rule-allowlist": "^4.0.0",
+    "textlint-plugin-latex2e": "^1.2.1",
+    "textlint-rule-no-todo": "^2.0.1",
+    "textlint-rule-terminology-zh": "^0.0.1"
+  },
+  "name": "miscellaneous",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
