@@ -1,7 +1,7 @@
 {
   "plugins": {
     "@textlint/markdown": {
-            "extensions": [".ipynb"]
+            "extensions": [".ipynb",".txt",".md"]
         }
     },
   "filters": {
@@ -34,8 +34,6 @@
         ["(\\w+[^.?!]\\)? )webpack", "$1webpack"],
         ["(\\w+[^.?!]\\)? )internet", "$internet"]
       ],
-      "terms": "~/terms.jsonc",
-      "terms": "@johnsmith/terms",
       "exclude": [
         "CSS"
       ]
