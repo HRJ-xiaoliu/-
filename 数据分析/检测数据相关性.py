@@ -1,8 +1,8 @@
 import pandas as pd
 
 data = {
-    "A": [1, 2, 3, 4, 5],
-    "B": [2, 4, 6, 8, 10]
+    "A": [1, 2, 3, 4, 5,6,7],
+    "B": [2, 4, 5, 8, 13,16,]
 }
 df = pd.DataFrame(data)
 
