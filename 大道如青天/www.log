@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.5)  5 APR 2024 16:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.5)  8 OCT 2024 13:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"e:/OneDrive - divinaletion/Miscellaneous/大道如青天/www.tex"
-(e:/OneDrive - divinaletion/Miscellaneous/大道如青天/www.tex
+**www
+(./www.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (e:/Source code/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -275,18 +275,18 @@ L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3832 strings out of 474116
- 75684 string characters out of 5741648
+ 3841 strings out of 474116
+ 75666 string characters out of 5741648
  1926190 words of memory out of 5000000
- 26154 multiletter control sequences out of 15000+600000
- 560860 words of font info for 43 fonts, out of 8000000 for 9000
+ 26160 multiletter control sequences out of 15000+600000
+ 561400 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,5n,83p,763b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><e:/Source code/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on www.pdf (1 page, 25076 bytes).
+ 80i,5n,83p,700b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><c:/Windows/Fonts/simsun.ttc><e:/Source code/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on www.pdf (1 page, 33627 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
- 13 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
