@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # 1. 读取数据
-df = pd.read_csv('数据分析\数据基础.csv')
+df = pd.read_csv('数据基础.csv')
 
 # 2. 数据预处理
 df['日期'] = pd.to_datetime(df['日期'], format='%Y/%m/%d')
@@ -30,6 +30,19 @@ portfolio_return = np.dot(weights, mean_returns)
 portfolio_variance = np.dot(weights.T, np.dot(cov_matrix, weights))
 portfolio_std_dev = np.sqrt(portfolio_variance)
 
-# 9. 输出结果
-print(f"投资组合的预期回报率: {portfolio_return:.4%}")
-print(f"投资组合的标准偏差: {portfolio_std_dev:.4%}")
+
+
+# 创建包含结果的Data
+data = {
+    '指标': ['投资组合的预期回报率', '投资组合的标准偏差'],
+    '值': [f'{portfolio_return:.4%}', f'{portfolio_std_dev:.4%}']
+}
+
+# 将数据转换为DataFrame
+results_df = pd.DataFrame(data)
+
+# 将结果写入Excel的同一个Sheet
+with pd.ExcelWriter('股票分析结果.xlsx', mode='a', engine='openpyxl') as writer:
+    results_df.to_excel(writer, sheet_name='回报组合', index=False)
+
+print("结果已写入股票分析结果.xlsx文件的回报组合表格中")

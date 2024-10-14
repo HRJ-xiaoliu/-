@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # 1. 读取数据
-df = pd.read_csv('数据分析\数据基础.csv')
+df = pd.read_csv('数据基础.csv')
 
 # 2. 数据预处理
 df['日期'] = pd.to_datetime(df['日期'], format='%Y/%m/%d')
@@ -42,5 +42,7 @@ stats = pd.DataFrame({
 
 stats = stats.reset_index()
 
-# 6. 输出结果
-print(stats)
+with pd.ExcelWriter('股票分析结果.xlsx', mode='a', engine='openpyxl') as writer:
+    stats.to_excel(writer, sheet_name='股票计结果', index=False)
+
+print("结果已写入股票分析结果.xlsx文件的Sheet2中")

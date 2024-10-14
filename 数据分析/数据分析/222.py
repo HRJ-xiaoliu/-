@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # 读取数据
-df = pd.read_csv("数据分析\数据基础.csv")
+df = pd.read_csv("数据基础.csv")
 
 # 将日期列转换为日期类型
 df['日期'] = pd.to_datetime(df['日期'], format='%Y/%m/%d')
@@ -35,8 +35,10 @@ results = pd.DataFrame({
 # 根据夏普比率对股票进行排序
 results_sorted = results.sort_values(by='夏普比率', ascending=False)
 
-# 输出结果
-print("方差-协方差矩阵：")
-print(cov_matrix)
-print("\n股票指标：")
-print(results_sorted)
+# 将协方差矩阵和股票指标写入Excel文件
+with pd.ExcelWriter('股票分析结果.xlsx') as writer:
+    cov_matrix.to_excel(writer, sheet_name='协方差矩阵')
+    results_sorted.to_excel(writer, sheet_name='股票指标')
+
+# 提示用户文件已保存
+"/mnt/data/股票分析结果.xlsx"

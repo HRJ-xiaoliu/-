@@ -3,7 +3,7 @@ import numpy as np
 from scipy.optimize import minimize
 
 # 1. 读取并预处理数据
-df = pd.read_csv("数据分析\数据基础.csv")
+df = pd.read_csv("数据基础.csv")
 df['日期'] = pd.to_datetime(df['日期'], format='%Y/%m/%d')
 df = df.dropna(subset=['回报率'])
 df['回报率'] = df['回报率'].astype(float)
