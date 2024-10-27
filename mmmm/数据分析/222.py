@@ -1,5 +1,5 @@
 import pandas as pd
-import numpy as np
+
 
 # 读取数据
 df = pd.read_csv("数据基础.csv")
@@ -41,4 +41,4 @@ with pd.ExcelWriter('股票分析结果.xlsx') as writer:
     results_sorted.to_excel(writer, sheet_name='股票指标')
 
 # 提示用户文件已保存
-"/mnt/data/股票分析结果.xlsx"
+print("股票分析结果.xlsx已保存")

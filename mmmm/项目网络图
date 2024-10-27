@@ -1,0 +1,45 @@
+// 项目网络图
+digraph {
+	node [color=lightblue2 fontsize=12 shape=box style=filled]
+	A [label="A: 场地准备
+(5.83天)"]
+	B [label="B: 地基施工
+(3.67天)"]
+	C [label="C: 框架施工
+(2.00天)"]
+	D [label="D: 屋顶安装
+(7.00天)"]
+	E [label="E: 电线布设
+(4.00天)"]
+	F [label="F: 管道施工
+(10.00天)"]
+	G [label="G: 干墙安装
+(2.17天)"]
+	H [label="H: 油漆
+(6.00天)"]
+	I [label="I: 地板安装
+(11.00天)"]
+	J [label="J: 柜子安装
+(16.33天)"]
+	K [label="K: 景观美化
+(7.33天)"]
+	Start [label="开始" color=lightgreen shape=oval style=filled]
+	End [label="结束" color=red shape=oval style=filled]
+	Start -> A
+	Start -> B
+	Start -> C
+	A -> F
+	A -> G
+	B -> E
+	C -> D
+	C -> J
+	D -> E
+	E -> F
+	E -> G
+	F -> H
+	G -> I
+	H -> K
+	I -> K
+	J -> End
+	K -> End
+}
